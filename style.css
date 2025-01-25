@@ -1,0 +1,359 @@
+/* Reset default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.main {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header and top banner styling */
+header {
+  background-color: #333;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.topbanner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.topbanner li {
+  position: relative;
+}
+
+.topbanner li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.topbanner li a:hover {
+  background-color: #575757;
+  color: #f4f4f9;
+}
+
+/* Dropdown styling */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  padding: 10px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #575757;
+  padding-left: 25px;
+}
+
+/* Hover to show dropdown */
+.topbanner li:hover .dropdown {
+  display: block;
+}
+
+/* Abbreviation styling */
+abbr {
+  text-decoration: dotted underline;
+  cursor: help;
+}
+
+/* Responsive menu for smaller screens */
+@media (max-width: 768px) {
+  .topbanner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topbanner li {
+    width: 100%;
+  }
+
+  .topbanner li a {
+    width: 100%;
+  }
+
+  .dropdown {
+    position: static;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .dropdown-content a {
+    width: 100%;
+  }
+}
+
+/* Safari fixes for hover effects */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .topbanner li a:hover {
+    background-color: #575757 !important;
+    color: #f4f4f9 !important;
+  }
+
+  .topbanner li:hover .dropdown {
+    display: block !important;
+  }
+}
+
+/* Keyframe animation for dropdown fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #fef5e6; /* Soft cream background for a warm, festive feel */
+}
+
+/* General Aside Styling for left Alignment */
+.aside {
+  position: fixed;
+  bottom: 20%; /* Adjust the vertical positioning */
+  left: 10px; /* Position close to the left edge */
+  font-family: "Georgia", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left; /* Align text within the box */
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff4500, #ff6347); /* Vibrant gradient background */
+  padding: 15px 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  max-width: 300px; /* Narrower width for better placement */
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+/* Styling for Span Element */
+.aside span {
+  color: #ffd700; /* Golden color for the age to stand out */
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Glowing effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .aside {
+      position: static; /* Stack it for smaller screens */
+      margin: 20px auto;
+      max-width: 90%;
+      text-align: center; /* Center the content on smaller screens */
+  }
+}
+
+/* Birthday Banner */
+.birthday-banner {
+  text-align: center;
+  background-color: #ffcccb; /* Light pink */
+  background-image: url(assets/images/oly-trad-family-photo-removebg-preview.png);
+  padding: 20px 15px;
+  color: #333;
+  border-bottom: 5px solid #ff8c00; /* Orange border for emphasis */
+}
+
+.birthday-banner h1 {
+  font-size: 2.5rem;
+  color: #ff4500; /* Festive orange-red */
+  margin: 0;
+}
+
+.birthday-banner .subheading {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Content Container */
+.content-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Intro Message */
+.intro-message {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #d2691e; /* Chocolate color for emphasis */
+}
+
+abbr {
+  text-decoration: none;
+  border-bottom: 1px dotted #888;
+}
+
+/* Links Container */
+.links-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links-container ul li {
+  margin: 10px 0;
+}
+
+.links-container ul li a {
+  text-decoration: none;
+  color: #ff4500; /* Festive orange-red */
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.links-container ul li a:hover {
+  color: #d2691e; /* Slightly darker on hover */
+}
+
+/* Closing Message */
+.closing-message {
+  font-size: 1rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signature {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .birthday-banner h1 {
+      font-size: 2rem;
+  }
+
+  .content-container {
+      padding: 15px;
+  }
+}
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf5e6; /* Light cream background */
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Message Section */
+.message {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #ffcccb; /* Light pink accent */
+}
+
+.message h1 {
+  font-size: 1.8rem;
+  color: #ff4500; /* Festive orange-red */
+  margin-bottom: 15px;
+}
+
+.message p {
+  margin: 10px 0;
+}
+
+.subheading {
+  font-style: italic;
+  font-size: 1rem;
+  color: #555;
+}
+
+.amen {
+  font-weight: bold;
+  color: #d2691e; /* Warm brown for emphasis */
+}
+
+.highlight {
+  font-weight: bold;
+  color: #ff6347; /* Tomato red */
+  font-style: italic;
+}
+
+.closing {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.signature {
+  margin-top: 15px;
+  font-weight: bold;
+  font-style: italic;
+  color: #333;
+  text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+  }
+
+  .message h1 {
+      font-size: 1.5rem;
+  }
+
+  .message p {
+      font-size: 0.9rem;
+  }
+}
