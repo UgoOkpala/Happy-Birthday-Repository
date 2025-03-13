@@ -187,7 +187,7 @@ body {
 .birthday-banner {
   text-align: center;
   background-color: #ffcccb; /* Light pink */
-  background-image: url(assets/images/oly-trad-family-photo-removebg-preview.png);
+  /*background-image: url(assets/images/oly-trad-family-photo-removebg-preview.png);*/
   padding: 20px 15px;
   color: #333;
   border-bottom: 5px solid #ff8c00; /* Orange border for emphasis */
